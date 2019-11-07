@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 const Layout = ({children, header}) => {
     const [showNavigation, toggleNavigation] = useState(false);
 
-    let navClassName = 'w-full fixed z-40 lg:w-1/4 xl:w-1/5 bg-gray-800 text-gray-100 lg:block';
+    let navClassName = 'w-full fixed z-40 lg:w-1/4 xl:w-1/5 bg-gray-800 text-gray-100 lg:block h-screen';
     if (! showNavigation) {
         navClassName = navClassName + ' hidden';
     }
@@ -31,14 +31,14 @@ const Layout = ({children, header}) => {
                     <i className="fas fa-bars fa-border rounded mr-4 text-gray-500 border-gray-500 lg:hidden hover:text-white hover:border-white" />
                 </button>
             </div>
-            <div className="w-full lg:flex pt-16">
+            <div className="w-full pt-16 content-end lg:clearfix">
                 <aside className={navClassName}>
                     <nav>
                         <a className={navLinkClassName} href="/"><i className="fas fa-tasks mr-4"/>Todos</a>
                         <a className={navLinkClassName} href="/"><i className="fas fa-users mr-4"/>Users</a>
                     </nav>
                 </aside>
-                <main className="lg:flex-1 text-gray-700  h-screen">
+                <main className="text-gray-700 lg:float-right lg:w-3/4 xl:w-4/5">
                     <header className="bg-white p-4 border-b sticky">
                         <h1 className="text-3xl text-gray-900">{header}</h1>
                     </header>
