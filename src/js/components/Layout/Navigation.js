@@ -14,7 +14,6 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
         'lg:w-1/5': true,
         'xl:w-1/6': true,
         'h-screen': true,
-        'pt-6': true,
         'bg-gray-800': true,
         'text-gray-100': true,
     })}>

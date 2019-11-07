@@ -17,23 +17,13 @@ const Layout = ({children}) => {
             <div className="w-full pt-16 content-end lg:clearfix">
                 <Navigation showNavigationOnSmallScreen={showNavigationOnSmallScreen} />
                 <div className="text-gray-700 lg:float-right lg:w-4/5 xl:w-5/6">
-                    {children}
+                    <main className="p-4 border-t-2">
+                        {children}
+                    </main>
                 </div>
             </div>
         </>
     )
 };
-
-Layout.Header = ({children}) => (
-    <header className="bg-gray-800">
-        <h1 className="border-b lg:rounded-tl-lg p-4 bg-white text-3xl text-gray-900">{children}</h1>
-    </header>
-);
-
-Layout.Content = ({children}) => (
-    <main className="p-4">
-        {children}
-    </main>
-);
 
 export default Layout;
