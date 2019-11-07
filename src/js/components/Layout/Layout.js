@@ -25,8 +25,8 @@ const Layout = ({children}) => {
 };
 
 Layout.Header = ({children}) => (
-    <header className="bg-white p-4 border-b sticky">
-        <h1 className="text-3xl text-gray-900">{children}</h1>
+    <header className="bg-gray-800">
+        <h1 className="border-b lg:rounded-tl-lg p-4 bg-white text-3xl text-gray-900">{children}</h1>
     </header>
 );
 

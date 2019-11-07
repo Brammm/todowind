@@ -14,7 +14,6 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
         'xl:w-1/5': true,
         'h-screen': true,
         'bg-gray-800': true,
-        'shadow-2xl': true,
         'text-gray-100': true,
     })}>
         <Navigation.Link path="/" iconName="fa-tasks" label="Todos"/>

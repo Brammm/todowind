@@ -1,7 +1,7 @@
 import React from "react";
 
 const TopHeader = ({onClick}) => (
-    <header className="fixed z-40 w-full h-16 flex items-center bg-gray-800 shadow-l text-gray-100">
+    <header className="fixed z-40 w-full h-16 flex items-center bg-gray-800 text-gray-100">
         <h1 className="mr-auto ml-4 lg:ml-8 text-teal-400 text-2xl font-bold h-8 tracking-widest uppercase">
             Todowind
         </h1>
