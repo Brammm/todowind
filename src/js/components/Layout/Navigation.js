@@ -1,5 +1,6 @@
 import React from "react";
 import classnames from 'classnames';
+import {NavLink} from 'react-router-dom';
 
 import Icon from "../Icon/Icon";
 
@@ -13,18 +14,24 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
         'lg:w-1/5': true,
         'xl:w-1/6': true,
         'h-screen': true,
+        'pt-6': true,
         'bg-gray-800': true,
         'text-gray-100': true,
     })}>
-        <Navigation.Link path="/" iconName="fa-tasks" label="Todos"/>
-        <Navigation.Link path="/" iconName="fa-users" label="Users"/>
+        <Navigation.Link path="/" exact iconName="fa-tasks" label="Todos"/>
+        <Navigation.Link path="/users" iconName="fa-users" label="Users"/>
     </nav>
 );
 
-Navigation.Link = ({path, iconName, label}) => (
-    <a className="block w-full py-2 px-8 hover:bg-gray-900 hover:text-teal-400" href={path}>
+Navigation.Link = ({exact, iconName, label, path}) => (
+    <NavLink
+        activeClassName="bg-gray-900"
+        className="block w-full py-2 px-8 hover:bg-gray-900 hover:text-teal-400"
+        exact={exact}
+        to={path}
+    >
         <Icon name={iconName} classNames={{'mr-4': true}}/>{label}
-    </a>
+    </NavLink>
 );
 
 export default Navigation;

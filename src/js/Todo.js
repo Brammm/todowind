@@ -1,14 +1,23 @@
 import React from 'react';
-import Layout from "./components/Layout/Layout";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import Todos from './components/Page/Todos';
+import Users from './components/Page/Users';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/todo.css';
 
-const Todo = () => {
-    return <Layout>
-        <Layout.Header>This is my header</Layout.Header>
-        <Layout.Content>Here goes the content</Layout.Content>
-    </Layout>;
-};
+const Todo = () => (
+    <Router>
+        <Switch>
+            <Route exact path="/">
+                <Todos />
+            </Route>
+            <Route path="/users">
+                <Users />
+            </Route>
+        </Switch>
+    </Router>
+);
 
 export default Todo;
