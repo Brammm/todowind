@@ -5,9 +5,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/todo.css';
 
 const Todo = () => {
-    return <Layout
-        header="This is my header">
-        Here goes the content
+    return <Layout>
+        <Layout.Header>This is my header</Layout.Header>
+        <Layout.Content>Here goes the content</Layout.Content>
     </Layout>;
 };
 
