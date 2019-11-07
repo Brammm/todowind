@@ -5,7 +5,7 @@ const Icon = ({name, classNames}) => {
     return (
         <i className={classnames({
             'fas': true,
-            [name]: true,
+            [`fa-${name}`]: true,
             ...classNames
         })} />
     );

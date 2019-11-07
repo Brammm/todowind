@@ -17,8 +17,8 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
         'bg-gray-800': true,
         'text-gray-100': true,
     })}>
-        <Navigation.Link path="/" exact iconName="fa-tasks" label="Todos"/>
-        <Navigation.Link path="/users" iconName="fa-users" label="Users"/>
+        <Navigation.Link path="/" exact iconName="tasks" label="Todos"/>
+        <Navigation.Link path="/users" iconName="users" label="Users"/>
     </nav>
 );
 
