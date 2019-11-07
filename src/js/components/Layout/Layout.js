@@ -16,7 +16,7 @@ const Layout = ({children}) => {
             <TopHeader onClick={handleMenuToggle}/>
             <div className="w-full pt-16 content-end lg:clearfix">
                 <Navigation showNavigationOnSmallScreen={showNavigationOnSmallScreen} />
-                <div className="text-gray-700 lg:float-right lg:w-3/4 xl:w-4/5">
+                <div className="text-gray-700 lg:float-right lg:w-4/5 xl:w-5/6">
                     {children}
                 </div>
             </div>
