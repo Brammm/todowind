@@ -7,12 +7,12 @@ const TopHeader = ({onClick}) => (
         </h1>
         <a href="/">
             <img
-                className="h-8 mr-4 rounded-full"
+                className="h-8 mr-4 lg:mr-8 rounded-full"
                 alt="avatar" src="https://api.adorable.io/avatars/285/hello@bitcode.be.png"
             />
         </a>
         <button onClick={onClick}>
-            <i className="fas fa-bars fa-border lg:hidden rounded mr-4 text-gray-500 border-gray-500 hover:text-white hover:border-white"/>
+            <i className="fas fa-bars  lg:hidden mr-4 text-gray-500 hover:text-gray-600"/>
         </button>
     </header>
 );

@@ -17,7 +17,7 @@ const Layout = ({children}) => {
             <div className="w-full pt-16 content-end lg:clearfix">
                 <Navigation showNavigationOnSmallScreen={showNavigationOnSmallScreen} />
                 <div className="text-gray-700 lg:float-right lg:w-4/5 xl:w-5/6">
-                    <main className="p-4 border-t-2">
+                    <main className="p-4 lg:p-8 border-t-2">
                         {children}
                     </main>
                 </div>

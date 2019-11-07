@@ -14,6 +14,7 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
         'lg:w-1/5': true,
         'xl:w-1/6': true,
         'h-screen': true,
+        'pt-8': true,
         'bg-gray-800': true,
         'text-gray-100': true,
     })}>
@@ -25,7 +26,7 @@ const Navigation = ({showNavigationOnSmallScreen}) => (
 Navigation.Link = ({exact, iconName, label, path}) => (
     <NavLink
         activeClassName="bg-gray-900"
-        className="block w-full py-2 px-8 hover:bg-gray-900 hover:text-teal-400"
+        className="block w-full py-4 px-8 hover:bg-gray-900 hover:text-teal-400"
         exact={exact}
         to={path}
     >

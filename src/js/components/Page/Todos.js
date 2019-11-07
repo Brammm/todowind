@@ -4,13 +4,19 @@ import Icon from "../Icon/Icon";
 
 const Todos = () => (
     <Layout>
-        <section>
-            <div>
-                <Icon name="tasks" />
+        <section className="w-full bg-white shadow-lg rounded-lg">
+            <div className="flex items-center p-6">
+                <div className="bg-gray-800 w-16 h-16 text-white rounded-full flex justify-center items-center flex-shrink-0 mr-8 text-xl">
+                    <Icon name="tasks" />
+                </div>
+                <div>
+                    <h2 className="text-2xl">
+                        Todos
+                    </h2>
+                    <p className="text-gray-500">Below is a list of your todos. You can mark them as done, assign them to users or add new ones.</p>
+                </div>
             </div>
-            <div>
-                <h2>Todos</h2>
-                <p>Below is a list of your todos. You can mark them as done, assign them to users or add new ones.</p>
+            <div className="bg-gray-100 md:pl-32 p-8 rounded-b-lg">
                 <ul>
                     <li>
                         <h3><input type="checkbox" /> Run Create React App to bootstrap an app</h3>
