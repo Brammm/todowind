@@ -1,5 +1,12 @@
+/*noinspection CssInvalidAtRule*/
 @tailwind base;
 
+body {
+    @apply bg-gray-200 text-gray-900;
+}
+
+/*noinspection CssInvalidAtRule*/
 @tailwind components;
 
+/*noinspection CssInvalidAtRule*/
 @tailwind utilities;
